@@ -64,6 +64,7 @@ PACKAGECONFIG ??= "libgcrypt non32bit"
 PACKAGECONFIG[sysfs] = "--enable-sysfs,--disable-sysfs,sysfsutils,"
 PACKAGECONFIG[libgcrypt] = "--enable-encryption,--disable-encryption,libgcrypt,"
 PACKAGECONFIG[non32bit] = "--enable-non32bit-int,--disable-non32bit-int,,"
+PACKAGECONFIG[disable-snmp-bc] = "--disable-snmp_bc,--enable-snmp_bc"
 
 export DISTRO
 
