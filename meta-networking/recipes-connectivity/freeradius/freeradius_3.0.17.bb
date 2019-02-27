@@ -83,6 +83,9 @@ PACKAGECONFIG[perl] = "--with-perl=${STAGING_BINDIR_NATIVE}/perl-native/perl --w
 PACKAGECONFIG[python] = "--with-rlm_python --with-rlm-python-bin=${STAGING_BINDIR_NATIVE}/python-native/python --with-rlm-python-include-dir=${STAGING_INCDIR}/${PYTHON_DIR},--without-rlm_python,python-native python"
 PACKAGECONFIG[rest] = "--with-rlm_rest,--without-rlm_rest,curl json-c"
 PACKAGECONFIG[ruby] = "--with-rlm_ruby,--without-rlm_ruby,ruby"
+PACKAGECONFIG[no-ssl] = "--without-openssl,--with-openssl"
+PACKAGECONFIG[no-rlm-eap-fast] = "--without-rlm_eap_fast,--with-rlm_eap_fast"
+PACKAGECONFIG[no-rlm-eap-pwd] = "--without-rlm_eap_pwd,--with-rlm_eap_pwd"
 
 inherit useradd autotools-brokensep update-rc.d systemd
 
