@@ -52,6 +52,7 @@ PACKAGECONFIG[ipv6] = "--enable-ipv6,--disable-ipv6,,"
 
 PACKAGECONFIG[perl] = "--enable-embedded-perl --with-perl-modules=yes, --disable-embedded-perl --with-perl-modules=no,\
                        perl, perl perl-lib"
+PACKAGECONFIG[disable-des] = "--disable-des,--enable-des"
 
 EXTRA_OECONF = "--enable-shared \
                 --disable-manuals \
